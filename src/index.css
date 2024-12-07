@@ -12,11 +12,14 @@ code {
     monospace;
 }
 .favButton{
-  background-color: rgba(136, 136, 136, 0.116);
+  background-color: rgb(219, 231, 236);
   padding: 10px;
   border: none;
   width: 100%;
   cursor: pointer;
+}
+.favButton:hover {
+  background-color: mediumslateblue;
 }
 
 h1{
@@ -25,34 +28,51 @@ h1{
 
 nav{
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
+  width: "100%";
+  justify-content: space-around;
+  align-items: center;
   padding: 1rem;
+  background-color: rgb(116, 161, 189);
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+
+.theme-btn{
+  background-color: black;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  padding: 7px;
 }
 
 a{
-  color: #000;
+  color: #000000;
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
 }
 a:hover{
-  color: rgb(136, 136, 136);
+  color: rgb(67, 67, 67);
 } 
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
+  align-items: center;
   padding: 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
   height: 40px;
   margin-top: 2rem;
+  background-color: rgb(116, 161, 189);
 }
 
-footer > img{
+footer img{
   width: 200px;
   margin: 0;
 }
@@ -61,13 +81,31 @@ footer > p{
   padding-top: 0.7rem;
 }
 
+.footer-logo{
+  display: flex;
+  align-items: center;
+}
+
+.footer-icons img {
+  width: 30px;
+  padding-right: 10px;
+}
+
 form{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 300px;
-  height: 100px;
+  height: 100%;
   margin: 0 auto;
+}
+
+form > button {
+  background-color: rgb(116, 161, 189);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .card{
@@ -94,6 +132,16 @@ form{
   margin: 0 auto;
 }
 
+.card img {
+  width: 200px;
+}
+
+.dentist-id {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 table {
  border-collapse: collapse;
     border-spacing: 0;
@@ -114,9 +162,42 @@ tr:nth-child(even) {
 }
 
 .dark{
-  background-color: #12121296;
+  background-color: #121212;
   color: white;
 }
 .dark > a {
   color: white;
+}
+
+
+.light {
+  background-color: whitesmoke;
+  color: #000;
+}
+
+.light > a {
+  color: black
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info-den {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-text{
+  padding: 20px;
 }

@@ -6,7 +6,7 @@ const ContextGlobal = createContext();
 
 const storedFavs = JSON.parse(localStorage.getItem("favs")) || [];
 
-const initialState = { theme: "", dentists: [], favs: storedFavs };
+const initialState = { theme: "light", dentists: [], favs: storedFavs };
 
 const Context = ({ children }) => {
   //Aqui deberan implementar la logica propia del Context, utilizando el hook useMemo
