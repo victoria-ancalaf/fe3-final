@@ -26,10 +26,10 @@ const Detail = () => {
           <img src="/images/doctor.jpg" alt="avatar" width={200} />
         </div>
         <div>
-          <h2>{dentist.name}</h2>
-          <h2>{dentist.email}</h2>
-          <h2>{dentist.phone}</h2>
-          <h2>{dentist.website}</h2>
+          <h2>Name: {dentist.name}</h2>
+          <h2>Email: {dentist.email}</h2>
+          <h2>Phone: {dentist.phone}</h2>
+          <h2>Website: {dentist.website}</h2>
         </div>
       </div>
     </div>
